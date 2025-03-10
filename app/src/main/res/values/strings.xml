@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">TicTacToe</string>
+    <string name="resume">Resume Game</string>
+    <string name="vs_player">Vs. Player</string>
+    <string name="vs_computer">Vs. Computer</string>
+    <string name="rules">Rules</string>
+    <string name="vs_player_rules">Two players alternate placing their move on the game board, with X going first. Get three in a row to win. The loser of the previous game begins the next game.</string>
+    <string name="vs_computer_rules">Same as above, but the computer takes the place of the second player.</string>
+    <string name="scratch">Scratch (Tie) Game</string>
+    <string name="scratch_rules">In the event of a tie game, the player that moved second will begin the next game.</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="x_turn">X\'s Turn!</string>
+    <string name="o_turn">O\'s Turn!</string>
+    <string name="computer_turn">Computer\'s Turn!</string>
+    <string name="your_turn">Your Turn!</string>
+    <string name="congratulations">Congratulations!</string>
+    <string name="invalid_move">Invalid Move</string>
+    <string name="play_again">Play Again?</string>
+    <string name="select_difficulty">Select Difficulty</string>
+    <string name="computer_interrupted">Computer was interrupted while thinking. Please restart the game.</string>
+    <string name="x_wins">X Wins!</string>
+    <string name="o_wins">O Wins!</string>
+    <string name="you_win">You Win!</string>
+    <string name="computer_wins">Computer Wins!</string>
+    <string name="cat_wins">Tie Game!</string>
+
+    <string-array name="difficulty_levels">
+        <item>Easy</item>
+        <item>Hard</item>
+    </string-array>
+</resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RulesFragment"
+    android:clickable="true"
+    android:focusable="true"
+    style="@style/Background">
+
+    <!--androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rule_toolbar"/-->
+    <TextView
+        style="@style/RuleTitle"/>
+    <TextView
+        style="@style/RuleSubtitle"
+        android:text="@string/vs_player" />
+    <TextView
+        style="@style/RuleText"
+        android:text="@string/vs_player_rules" />
+    <TextView
+        style="@style/RuleSubtitle"
+        android:text="@string/vs_computer" />
+    <TextView
+        style="@style/RuleText"
+        android:text="@string/vs_computer_rules" />
+    <TextView
+        style="@style/RuleSubtitle"
+        android:text="@string/scratch" />
+    <TextView
+        style="@style/RuleText"
+        android:text="@string/scratch_rules" />
+</LinearLayout>

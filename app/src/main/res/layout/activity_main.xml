@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/main_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:background="@color/blue" />
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/main_toolbar">
+
+        <LinearLayout
+            android:id="@+id/main_menu_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="parent">
+
+            <TextView
+                style="@style/MenuTitle" />
+
+            <Button
+                android:id="@+id/resume_game_button"
+                style="@style/MenuButton"
+                android:paddingLeft="23dp"
+                android:paddingRight="23dp"
+                android:text="@string/resume" />
+
+            <Button
+                android:id="@+id/vs_player_button"
+                style="@style/MenuButton"
+                android:paddingLeft="54dp"
+                android:paddingRight="54dp"
+                android:text="@string/vs_player" />
+
+            <Button
+                android:id="@+id/vs_computer_button"
+                style="@style/MenuButton"
+                android:paddingLeft="29dp"
+                android:paddingRight="29dp"
+                android:text="@string/vs_computer" />
+
+            <Button
+                android:id="@+id/rules_button"
+                style="@style/MenuButton"
+                android:paddingLeft="84dp"
+                android:paddingRight="84dp"
+                android:text="@string/rules" />
+        </LinearLayout>
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
